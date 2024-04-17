@@ -92,6 +92,7 @@ services:
     image: mysql
     #     ports:
     #       - "3306:3306"
+    command: --max-connections=10000
     environment:
       - MYSQL_ROOT_PASSWORD=123456
     volumes:
